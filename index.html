@@ -11,16 +11,25 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form">
         <fieldset>
-            <label>Name <input type="text" required name="first-name"></label>
-            <label>Email<input type="text" required name="email"></label>
-            <label>Age(optional)<input type="text" requiredname="age"></label>
-            <label>Which option best describes your current role?<input type="text" required name="first-name"></label>
+            <label>Name <input type="text" required name="name-label" placeholder="Enter your name"></label>
+            <label>Email<input type="email" required name="email-label" placeholder="Enter your Email"></label>
+            <label>Age(optional)<input type="number" name="number-label" min="13" max="120" placeholder="Age"></label>
+            <label>Which option best describes your current role?
+                <select name="referrer">
+                    <option value="">(select current role)</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                </select>
+            </label>
         </fieldset>
         <fieldset>
             <label>Would you recommend freeCodeCamp to a friend?</label>
-            <label><input type="radio" class="inline" />Definitely</label>
-            <label><input type="radio" class="inline" />Maybe</label>
-            <label><input type="radio" class="inline" />Not sure</label>
+            <label><input type="radio" class="inline" name="account-type" />Definitely</label>
+            <label><input type="radio" class="inline" name="account-type" />Maybe</label>
+            <label><input type="radio" class="inline" name="account-type" />Not sure</label>
             <label>What is your favorite feature of freeCodeCamp?
                 <select name="referrer">
                     <option value="">(select an option)</option>
