@@ -1,6 +1,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
+    background-color: #6459FF;
+    color: white;
 }
 
 h1,
@@ -28,6 +30,24 @@ select {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+.inlinec {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: baseline;
 }
 
 input[type="submit"] {
